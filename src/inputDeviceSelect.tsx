@@ -41,6 +41,7 @@ const InputDeviceSelect = ({ onChange }: PropTypes) => {
           </option>
         ))}
       </select>
+      {/* TODO: map over the devices and create buttons */}
     </div>
   );
 };

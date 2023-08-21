@@ -1,0 +1,30 @@
+.to-right {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.right-arrows {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.arrow1 {
+  height: 45px !important;
+  width: 43px !important;
+}
+
+.arrow2 {
+  height: 45px !important;
+  left: 29px !important;
+  width: 43px !important;
+}
+
+.arrow3 {
+  height: 45px !important;
+  left: 57px !important;
+  width: 43px !important;
+}

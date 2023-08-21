@@ -2,6 +2,7 @@ import { useCallback, SetStateAction, Dispatch } from "react";
 import InputDeviceSelect from "../inputDeviceSelect.tsx";
 import { InputModes } from "../data/inputModes";
 import { ColoredText } from "./ColoredText.tsx";
+import { NextPageArrows } from "./NextPageArrows.tsx";
 
 interface InitialScreenProps {
   inputMode: InputModes | null;
@@ -31,6 +32,7 @@ export function InitialScreen(props: InitialScreenProps) {
       <div>
         <InputDeviceSelect onChange={handleDeviceIdChange} />
         <button onClick={() => props.onSetScreen("tab-screen")}>Start</button>
+        <NextPageArrows />
       </div>
     </header>
   );
