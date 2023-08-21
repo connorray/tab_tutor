@@ -1,6 +1,7 @@
 import { useCallback, SetStateAction, Dispatch } from "react";
 import InputDeviceSelect from "../inputDeviceSelect.tsx";
 import { InputModes } from "../data/inputModes";
+import { ColoredText } from "./ColoredText.tsx";
 
 interface InitialScreenProps {
   inputMode: InputModes | null;
@@ -25,7 +26,7 @@ export function InitialScreen(props: InitialScreenProps) {
   );
   return (
     <header className="App-header">
-      <p>Plug in a guitar to start!</p>
+      <ColoredText text="Plug in a guitar to start!" />
       <p>🎸 -- 💻</p>
       <div>
         <InputDeviceSelect onChange={handleDeviceIdChange} />

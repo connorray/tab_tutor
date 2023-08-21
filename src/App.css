@@ -14,7 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* Radial gradient from center to edges */
+  background: radial-gradient(#364169, #192d6d);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.text-wrapper {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(255, 206.5, 19.78) 0%,
+    rgb(238.23, 142.64, 255) 55.86%,
+    rgb(55.84, 222.05, 255) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.02px;
+  line-height: 54px;
+  top: 483px;
+  white-space: nowrap;
 }
 
 .App-link {

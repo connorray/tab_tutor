@@ -1,5 +1,5 @@
 import { useState, useEffect, ChangeEvent } from "react";
-import React from "react";
+import { ColoredText } from "./components/ColoredText";
 
 type PropTypes = {
   onChange: Function;
@@ -33,7 +33,7 @@ const InputDeviceSelect = ({ onChange }: PropTypes) => {
 
   return (
     <div>
-      <p>Choose your input device</p>
+      <ColoredText text="Choose your input device" />
       <select onChange={handleDeviceSelection}>
         {devices.map(({ id, label }) => (
           <option key={id} value={id}>
