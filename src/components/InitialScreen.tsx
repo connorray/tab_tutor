@@ -25,14 +25,18 @@ export function InitialScreen(props: InitialScreenProps) {
       props.inputMode,
     ]
   );
+
+  const handleClickArrowButton = () => {
+    props.onSetScreen("tab-screen");
+  };
+
   return (
     <header className="App-header">
       <ColoredText text="Plug in a guitar to start!" />
       <p>🎸 -- 💻</p>
       <div>
         <InputDeviceSelect onChange={handleDeviceIdChange} />
-        <button onClick={() => props.onSetScreen("tab-screen")}>Start</button>
-        <NextPageArrows />
+        <NextPageArrows onClick={handleClickArrowButton} />
       </div>
     </header>
   );
